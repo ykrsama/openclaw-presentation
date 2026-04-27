@@ -20,7 +20,7 @@ transition: fade-out
       </div>
       <div :class="[$clicks >= 1 ? 'opacity-100' : 'opacity-0']" class="transition duration-400 delay-100" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
         <div style="font-size: 10px; color: rgba(0,229,255,0.55);">Human</div>
-        <div style="color: rgba(0,229,255,0.6); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(0,229,255,0.6); font-size: 18px; animation-delay: 0s;">→</div>
       </div>
       <div :class="[$clicks >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 glass rounded-lg px-3 py-2"
@@ -29,7 +29,7 @@ transition: fade-out
         Script
       </div>
       <div :class="[$clicks >= 2 ? 'opacity-100' : 'opacity-0']" class="transition duration-500 delay-100">
-        <div style="color: rgba(0,229,255,0.6); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(0,229,255,0.6); font-size: 18px; animation-delay: 0.45s;">→</div>
       </div>
       <div :class="[$clicks >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-200 glass rounded-lg px-3 py-2"
@@ -39,7 +39,7 @@ transition: fade-out
       </div>
       <div :class="[$clicks >= 3 ? 'opacity-100' : 'opacity-0']" class="transition duration-500" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
         <div style="font-size: 10px; color: rgba(0,229,255,0.55);">Review+Debug</div>
-        <div style="color: rgba(0,229,255,0.6); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(0,229,255,0.6); font-size: 18px; animation-delay: 0.9s;">→</div>
       </div>
       <div :class="[$clicks >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-100 glass rounded-lg px-3 py-2"
@@ -47,7 +47,7 @@ transition: fade-out
         Script'
       </div>
       <div :class="[$clicks >= 3 ? 'opacity-100' : 'opacity-0']" class="transition duration-500 delay-200">
-        <div style="color: rgba(0,229,255,0.6); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(0,229,255,0.6); font-size: 18px; animation-delay: 1.35s;">→</div>
       </div>
       <div :class="[$clicks >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-300 glass rounded-lg px-3 py-2"
@@ -59,7 +59,7 @@ transition: fade-out
       </div>
       <div :class="[$clicks >= 3 ? 'opacity-100' : 'opacity-0']" class="transition duration-500 delay-400" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
         <div style="font-size: 10px; color: rgba(0,229,255,0.55);">Human</div>
-        <div style="color: rgba(0,229,255,0.6); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(0,229,255,0.6); font-size: 18px; animation-delay: 1.8s;">→</div>
       </div>
       <div :class="[$clicks >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-500 glass rounded-lg px-3 py-2"
@@ -84,7 +84,7 @@ transition: fade-out
       </div>
       <div :class="[$clicks >= 4 ? 'opacity-100' : 'opacity-0']" class="transition duration-400 delay-100" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
         <div style="font-size: 10px; color: rgba(255,61,242,0.65);">Human</div>
-        <div style="color: rgba(255,61,242,0.7); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(255,61,242,0.7); font-size: 18px; animation-delay: 0s;">→</div>
       </div>
       <div :class="[$clicks >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 glass rounded-lg px-3 py-2"
@@ -94,7 +94,7 @@ transition: fade-out
       </div>
       <div :class="[$clicks >= 5 ? 'opacity-100' : 'opacity-0']" class="transition duration-500 delay-100" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
         <div style="font-size: 10px; color: rgba(255,61,242,0.65);">Human</div>
-        <div style="color: rgba(255,61,242,0.7); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(255,61,242,0.7); font-size: 18px; animation-delay: 0.45s;">→</div>
       </div>
       <div :class="[$clicks >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-200 glass rounded-lg px-3 py-2"
@@ -105,7 +105,7 @@ transition: fade-out
       </div>
       <div :class="[$clicks >= 6 ? 'opacity-100' : 'opacity-0']" class="transition duration-500" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
         <div style="font-size: 10px; color: rgba(255,61,242,0.65);">Agent+Human</div>
-        <div style="color: rgba(255,61,242,0.7); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(255,61,242,0.7); font-size: 18px; animation-delay: 0.9s;">→</div>
       </div>
       <div :class="[$clicks >= 6 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-100 glass rounded-lg px-3 py-2 pulse-glow"
@@ -114,7 +114,7 @@ transition: fade-out
         <span style="color: #7c5cff; font-weight: 600;">Skill</span>
       </div>
       <div :class="[$clicks >= 7 ? 'opacity-100' : 'opacity-0']" class="transition duration-500 delay-100">
-        <div style="color: rgba(124,92,255,0.7); font-size: 18px;">→</div>
+        <div class="arrow-anim" style="color: rgba(124,92,255,0.7); font-size: 18px; animation-delay: 1.35s;">→</div>
       </div>
       <div :class="[$clicks >= 7 ? 'opacity-100 scale-100' : 'opacity-0 scale-95']"
            class="transition duration-500 delay-200 glass rounded-lg px-3 py-2"
