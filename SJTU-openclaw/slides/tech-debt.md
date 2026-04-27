@@ -11,7 +11,7 @@ transition: fade-out
   <div v-click class="glass rounded-xl overflow-hidden" style="border-color: rgba(0,229,255,0.2);">
     <div style="background: rgba(0,229,255,0.08); padding: 12px 20px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(0,229,255,0.15);">
       <div class="i-carbon:code-reference" style="font-size: 22px; color: #00e5ff;" />
-      <span style="font-size: 17px; font-weight: 600; color: #00e5ff;">Do Code Review Seriously</span>
+      <span style="font-size: 17px; font-weight: 600; color: #00e5ff;">Do Code Review</span>
     </div>
     <div style="padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;">
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
@@ -24,7 +24,7 @@ transition: fade-out
       </div>
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(0,229,255,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Run test or CI/CD
+        Let test and CI/CD decide, not agent's summary
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@ transition: fade-out
     <div style="padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;">
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(124,92,255,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Using agents does not replace understanding the domain
+        Using agents does not replace understanding the technical detail
       </div>
     </div>
   </div>

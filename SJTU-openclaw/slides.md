@@ -47,9 +47,5 @@ src: ./slides/security.md
 ---
 
 ---
-src: ./slides/tech-debt.md
----
-
----
 src: ./slides/thank-you.md
 ---
