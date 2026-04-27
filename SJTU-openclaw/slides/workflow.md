@@ -128,6 +128,6 @@ transition: fade-out
 <div :class="[$clicks >= 9 ? 'opacity-100' : 'opacity-0']" class="transition duration-500 delay-300 mt-6 glass rounded-lg px-5 py-3"
      style="max-width: 680px; border-left: 3px solid rgba(124,92,255,0.6);">
   <span style="color: rgba(255,255,255,0.55); font-size: 14px; font-style: italic;">
-    Key insight: invest in the Document step — it is what transforms a one-off script into a reusable skill.
+     Document before solving a problem. Think about what the reusable skills are.<br>Only do simple stuff, and scale it using agents.
   </span>
 </div>

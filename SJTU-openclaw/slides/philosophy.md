@@ -17,14 +17,14 @@ transition: fade-out
   <div v-click class="flex items-start gap-3">
     <div style="color: #00e5ff; font-size: 20px; margin-top: 2px; flex-shrink: 0;">→</div>
     <div style="font-size: 18px; line-height: 1.5;">
-      My experience comes only from <strong>using</strong> agents — not building them
+      My experience comes only from <strong>using</strong> agents
     </div>
   </div>
 
   <div v-click class="flex items-start gap-3">
     <div style="color: #7c5cff; font-size: 20px; margin-top: 2px; flex-shrink: 0;">→</div>
     <div style="font-size: 18px; line-height: 1.5;">
-      I cannot tell you what the best practices are — only what <strong>works for me</strong>
+      I cannot tell you what the best practices are
     </div>
   </div>
 
@@ -40,6 +40,6 @@ transition: fade-out
   <div i-carbon:idea style="font-size: 28px; color: #ff3df2; flex-shrink: 0;" />
   <div style="font-size: 17px; line-height: 1.5; color: rgba(255,255,255,0.88);">
     Think of the agent as a <span style="color: #ff3df2; font-weight: 600;">co-worker or student</span> —
-    it amplifies your intent, but you still need to set the direction.
+    it amplifies your intent, but you still need to set a clear direction.
   </div>
 </div>
