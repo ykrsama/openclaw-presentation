@@ -8,7 +8,7 @@ transition: fade-out
 <div class="glass rounded-xl px-6 py-4 mt-6" style="border-left: 3px solid rgba(0,229,255,0.5); max-width: 720px;">
   <div style="font-size: 15px; color: rgba(255,255,255,0.7); font-style: italic; margin-bottom: 4px;">Disclaimer</div>
   <div style="font-size: 18px; line-height: 1.55;">
-    I am a <span style="color: #00e5ff; font-weight: 600;">naive user</span> of agentic harnessing —
+    I am a <span style="color: #00e5ff; font-weight: 600;">naive user</span> of agentic harnessing system —
     sharing from a personal perspective, not prescribing best practices.
   </div>
 </div>
