@@ -16,7 +16,7 @@ transition: fade-out
     <div style="padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;">
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(0,229,255,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Put every agent workspace under <strong>version control</strong>
+        Put every workspace under <strong>version control</strong>
       </div>
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(0,229,255,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
@@ -24,11 +24,7 @@ transition: fade-out
       </div>
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(0,229,255,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Audit trail: <code style="background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 4px; font-size: 13px;">git log</code> shows exactly what changed
-      </div>
-      <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
-        <span style="color: rgba(0,229,255,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Enables safe experimentation — branch freely
+        Don't add API keys in git repo
       </div>
     </div>
   </div>
@@ -42,32 +38,31 @@ transition: fade-out
     <div style="padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;">
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(255,61,242,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        <span>Grant <strong>allow all dangerous permissions</strong> only after understanding the scope</span>
+        <span>Grant <strong>allow all dangerous permissions</strong> only in sandbox</span>
       </div>
       <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
         <span style="color: rgba(255,61,242,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Reduces friction for trusted, well-scoped tasks
-      </div>
-      <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
-        <span style="color: rgba(255,61,242,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        <span>Read the permission before clicking <em>yes</em> — know what you're authorizing</span>
-      </div>
-      <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
-        <span style="color: rgba(255,61,242,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
-        Prefer scoped permissions per project, not global blanket allow
+        <span>Prompt-based restrictions are <strong>fragile</strong> — enforce limits at the <strong>system level</strong> (OS permissions, container boundaries, allow/deny lists in config)</span>
       </div>
     </div>
   </div>
 
 </div>
 
-<div v-click class="glass rounded-xl px-5 py-3 mt-6"
-     style="border-left: 3px solid rgba(251,191,36,0.6); max-width: 680px;">
-  <div style="display: flex; align-items: center; gap: 10px;">
-    <div class="i-carbon:warning-alt" style="font-size: 20px; color: rgb(251,191,36); flex-shrink: 0;" />
-    <span style="font-size: 15px; color: rgba(255,255,255,0.8);">
-      <strong style="color: rgb(251,191,36);">Trust + verify</strong> — code review is still your responsibility,
-      even when the agent wrote it.
-    </span>
+<!-- Card 3: Network Security -->
+<div v-click class="glass rounded-xl overflow-hidden mt-6" style="border-color: rgba(74,222,128,0.2);">
+  <div style="background: rgba(74,222,128,0.08); padding: 12px 20px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(74,222,128,0.15);">
+    <div class="i-carbon:network-4" style="font-size: 22px; color: #4ade80;" />
+    <span style="font-size: 17px; font-weight: 600; color: #4ade80;">Network Security</span>
+  </div>
+  <div style="padding: 16px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+    <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
+      <span style="color: rgba(74,222,128,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
+      <span>Use firewall in <strong>whitelist mode</strong> — deny by default, allow only what's needed. Close vulnerable ports: <code style="background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 4px; font-size: 13px;">3389</code> RDP, FTP, frp control, openclaw gateway, etc.</span>
+    </div>
+    <div class="flex items-start gap-3" style="font-size: 15px; line-height: 1.5;">
+      <span style="color: rgba(74,222,128,0.6); flex-shrink: 0; font-size: 18px; margin-top: 1px;">·</span>
+      <span>Prefer encrypted overlay networks: <strong>WireGuard</strong>, <strong>Tailscale</strong> over exposed public ports</span>
+    </div>
   </div>
 </div>
